@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h4 {
+  color: crimson;
+}
+.h1_img
+{
+  width: fit-content;
+  height: 25%;
+}
