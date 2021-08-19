@@ -1,13 +1,19 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import h1 from '../Images/header.png'
+import Service from './Service'
+import About from './About'
+import Contact from './Contact'
+
 
 const Home = () => {
     return (
-        <section id="header" className="d-flex align-items-center bg-black text-light">
+        <>
+         
+         <section className="d-flex align-items-center bg-black text-light mb-5">
             <div className="container">
                 <div className="row">
-                    <div className="col-6 order-1 order-lg-1 text-capitalize d-flex justify-content-center flex-column ">
+                    <div className="col-6  order-1 order-lg-1 text-capitalize d-flex justify-content-center flex-column ">
                         <br /><h4>EXCLUSIVE ACCESS</h4><br />
                         <h1>
                             online payment made <br /> easy for you.
@@ -31,12 +37,18 @@ const Home = () => {
                         <img
                             src={h1}
                             className="figure-img img-fluid rounded-3 p-5 "
-                            alt="scooter"
+                            alt="Card"
                         />
                     </div>
                 </div>
             </div>
         </section>
+
+        
+      <Service />
+      <About />
+      <Contact />
+    </>
     )
 }
 export default Home

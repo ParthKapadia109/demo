@@ -1,33 +1,28 @@
+import GetAppIcon from '@material-ui/icons/GetApp';
+import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';
+import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet';
+
 const WorkApi = () => [
     {
         id: 1,
-        logo: 'GetAppIcon',
+        logo: <GetAppIcon color='secondary' fontSize='Large' />,
+        to:'/',
         name: 'Download The App',
-        description: 'Lorem'
+        description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore dolorem maiores fugiat culpa veniam iste laboriosam illum, facere assumenda vel delectus cumque consequuntur qui distinctio accusamus.'
     },
     {
         id: 2,
-        logo: '',
+        logo: <SupervisedUserCircleIcon color='secondary' fontSize='Large' />,
+        to:'/',
         name: 'Complete The Instructions',
-        description: 'Instructions lorem'
+        description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore dolorem maiores fugiat culpa veniam iste laboriosam illum, facere assumenda vel delectus cumque consequuntur qui distinctio accusamus.'
     },
     {
         id: 3,
-        logo: '',
+        logo:<AccountBalanceWalletIcon color='secondary' fontSize='Large' />,
+        to:'/',
         name: 'Receive Your Funds',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore dolorem maiores fugiat culpa veniam iste laboriosam illum, facere assumenda vel delectus cumque consequuntur qui distinctio accusamus. Aliquam temporibus numquam molestiae!'
-    },
-    {
-        id: 1,
-        logo: 'GetAppIcon',
-        name: 'Download The App',
-        description: 'Lorem'
-    },
-    {
-        id: 1,
-        logo: 'GetAppIcon',
-        name: 'Download The App',
-        description: 'Lorem'
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore dolorem maiores fugiat culpa veniam iste laboriosam illum, facere assumenda vel delectus cumque consequuntur qui distinctio accusamus.'
     },
 ]
 export default WorkApi

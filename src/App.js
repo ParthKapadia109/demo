@@ -7,24 +7,22 @@ import Service from './Pages/Service'
 import About from './Pages/About'
 import Sign_Up from './Pages/Sign_Up'
 import Contact from './Pages/Contact'
-import HowWorkit from './Pages/HowWorkit'
+import ServiceDetail from './Pages/ServiceDetail'
 
 const App = () => {
   return (
     <>
       <Navbar />
-      
+
       <Switch>
         <Route exact path='/' component={Home} />
-        {/* <Route exact path='/Service' component={Service} />
+        <Route exact path='/Service' component={Service} />
         <Route exact path='/About' component={About} />
         <Route exact path='/Contact' component={Contact} />
         <Route exact path='/SignUp' component={Sign_Up} />
-        <Route exact path='/work' component={HowWorkit} /> */}
+        <Route exact path='/:ServiceDetail_id' component={ServiceDetail} />
         <Redirect to="/" />
       </Switch>
-
-      <HowWorkit />
     </>
   )
 }
