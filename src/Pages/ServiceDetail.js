@@ -1,25 +1,11 @@
-import React, { Component } from 'react'
-// import axios from 'axios'
+import React from 'react'
 
-class ServiceDetail extends Component {
-    state = {
-        id: null
-    }
-    componentDidMount() {
-        let id = this.props.match.params.ServiceDetail_id
-        // axios.get('http://localhost:3000/Service')
-        this.setState({
-            id: id
-        })
-    }
-    render() {
-        return ( 
-            <>  
-                <div className='container text-center p-2'>
-                <h4>{this.state.id}</h4>
-                </div>
-            </>
-        )
-    }
+const ServiceDetail = (props) => {
+ 
+  return (
+    <div>
+      <h4 className='fw-bold fs-2 text-center p-3 mb-5'>{props.match.params.name}</h4>
+    </div>
+  )
 }
 export default ServiceDetail

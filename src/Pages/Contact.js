@@ -1,37 +1,73 @@
-import React from 'react'
-// import { NavLink } from 'react-router-dom'
+import React from "react";
 
 const Contact = () => {
-    return (
-        <>
-            {/* <section>
-                <div className='container '>
-                    <form class="row g-3 needs-validation " novalidate>
-                        <div className="text-capitalize d-flex justify-content-center align-items-center  flex-column p-5 mb-5 ">
-                            <h3 className=' fs-2 text-decoration-underline p-5'>Contact us</h3>
-                            <div className="col-md-4 ">
-                                <label for="validationCustom01" className="form-label p-2 fs-4">First name</label>
-                                <input type="text" className="form-control" id="validationCustom01" placeholder='Enter Your First name' required />
-                            </div>
-                            <br />
-                            <div className="col-md-4">
-                                <label for="validationCustom02" className="form-label p-2 fs-4">Last name</label>
-                                <input type="text" className="form-control" id="validationCustom02" placeholder='Enter Your Last name' required />
-                            </div>
-                            <br />
-                            
-                            <div className="col-12 text-center p-4">
-                                <NavLink
-                                    to='/'
-                                    className=" btn btn-outline-primary rounded-1"
-                                    type='submit'>Submit
-                                </NavLink>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </section> */}
-        </>
-    )
-}
-export default Contact
+  return (
+    <>
+      <section>
+        <h2 className="text-center text-decoration-underline m-2 p-3 ">
+          Contact Us
+        </h2>
+        <form
+          className="row g-3 needs-validation align-items-center justify-content-center flex-column"
+          novalidate
+        >
+          <div className='col-4'>
+            <label className="form-label fs-4">First name</label>
+            <input type="text" className="form-control" required />
+          </div>
+
+          <div className='col-4'>
+            <label className="form-label fs-4">Last name</label>
+            <input type="text" className="form-control" required />
+          </div>
+
+          <div className='col-4'>
+            <label className="form-label fs-4">Username</label>
+            <div className="input-group has-validation">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="abc123@gmail.com"
+                aria-describedby="validationTooltipUsernamePrepend"
+                required
+              />
+              <div className="invalid-tooltip">
+                Please choose a unique and valid username.
+              </div>
+            </div>
+          </div>
+
+          <div className='col-4'>
+            <label className="form-label fs-4">State</label>
+            <select className="form-select" required>
+              <option selected disabled value="">
+                Choose...
+              </option>
+              <option>...</option>
+            </select>
+            <div className="invalid-tooltip">Please select a valid state.</div>
+          </div>
+
+          <div className='col-4'>
+            <label className="form-label fs-4">City</label>
+            <select className="form-select" required>
+              <option selected disabled value="">
+                Choose...
+              </option>
+              <option>
+              </option>
+            </select>
+            <div className="invalid-tooltip">Please select a valid city.</div>
+          </div>
+
+          <div className="text-center p-2">
+            <button className="btn btn-outline-primary" type="submit">
+              Submit
+            </button>
+          </div>
+        </form>
+      </section>
+    </>
+  );
+};
+export default Contact;
